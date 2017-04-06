@@ -1,0 +1,16 @@
+v102只用双目
+median tracking time: 0.037638
+mean tracking time: 0.0379073
+
+
+v102 双目Vio
+median tracking time: 0.05519834533334
+mean tracking time: 0.05501179397106
+
+
+v102 单目vio
+median tracking time: 0.02710752934217
+mean tracking time: 0.02712756581604
+
+
+
