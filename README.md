@@ -38,6 +38,7 @@ The results of this project is shown in ![resultOnV102.png](https://github.com/Z
 ![resultOnV103.png](https://github.com/ZuoJiaxing/LearnVIORBnorosgai2/blob/master/resultOnV103.png?raw=true), which is carried out on the V102 medium and v103 difficult dataset. I only adjust some functions to make the code suitable for no-ros application, add the initilization of stereo with IMU, and some edges of G2O related to stereo-inertial. Not bug-free. Not real-time.
 
 ###################################################################################
+
 An implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
 
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
