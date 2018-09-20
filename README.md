@@ -1,33 +1,43 @@
-This is the no ros version of  jingpang's LearnVIORB (https://github.com/jingpang/LearnVIORB). Both the monocular camera and stereo camera combing with IMU are avaliable, please see Examples/ROS/ORB_VIO/srcnoros_vio.cc(Mono), Examples/ROS/ORB_VIO/stereo_noros_vio.cc(Stereo) for detail.
+This is the no-ros version of jingpang's LearnVIORB (https://github.com/jingpang/LearnVIORB). Both the monocular and stereo visual inertial odometry are avaliable, please see Examples/ROS/ORB_VIO/srcnoros_vio.cc(Mono), Examples/ROS/ORB_VIO/stereo_noros_vio.cc(Stereo) for detail.
 
 
-## Execute the following  command for runing on the Euroc Dataset.
-For Mono：
-
-V1_02_medium
-
-./build/ORBVIO_euroc  /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/euroc.yaml  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/imu0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data V1_02_medium
-
-V1_03_difficult
-
-./build/ORBVIO_euroc  /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/euroc.yaml  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/imu0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data V1_03_difficult
-
-For Stereo：
+## Execute the following  command to get it start on the Euroc Dataset.
+### For Mono：
 
 V1_02_medium
 
-./build/StereoORBVIO_euroc /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/Stereoeuroc.yaml  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/imu0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data  /home/zuojiaxing/Documents/dataset/EURCO/V1_02_medium/mav0/cam1/data V1_02_medium
+./build/ORBVIO_euroc  ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/euroc.yaml  ~/Documents/dataset/EURCO/V1_02_medium/mav0/imu0/data.csv  
+~/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data.csv  
+~/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data V1_02_medium
+
+V1_03_difficult
+
+./build/ORBVIO_euroc  ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin ~/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/euroc.yaml  ~/Documents/dataset/EURCO/V1_03_difficult/mav0/imu0/data.csv  
+~/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data.csv  
+~/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data V1_03_difficult
+
+### For Stereo：
+
+V1_02_medium
+
+./build/StereoORBVIO_euroc ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/Stereoeuroc.yaml  ~/Documents/dataset/EURCO/V1_02_medium/mav0/imu0/data.csv  
+~/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data.csv  
+~/Documents/dataset/EURCO/V1_02_medium/mav0/cam0/data  
+~/Documents/dataset/EURCO/V1_02_medium/mav0/cam1/data V1_02_medium
 
 
 V1_03_difficult
 
-./build/StereoORBVIO_euroc /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin /home/zuojiaxing/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/Stereoeuroc.yaml  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/imu0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data.csv  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data  /home/zuojiaxing/Documents/dataset/EURCO/V1_03_difficult/mav0/cam1/data V1_03_difficult
+./build/StereoORBVIO_euroc ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/Vocabulary/ORBvoc.bin ~/Documents/github/develop_ORBSLAM/LearnVIORBnorosgai2/config/Stereoeuroc.yaml  ~/Documents/dataset/EURCO/V1_03_difficult/mav0/imu0/data.csv  
+~/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data.csv  
+~/Documents/dataset/EURCO/V1_03_difficult/mav0/cam0/data  
+~/Documents/dataset/EURCO/V1_03_difficult/mav0/cam1/data V1_03_difficult
 
-#NOTE:
-The results of this project is shown in resultOnV102.png and resultOnV103.png, which are carried on the V102 medium and v103 difficult dataset.
-I only adjust some functions to make the code suitable for no ros environment, add the initilization of stereo with IMU, and add some edges of g2o about stereo camera. Not bug-free. Not real-time.
+# NOTE:
+The results of this project is shown in ![resultOnV102.png](https://github.com/ZuoJiaxing/LearnVIORBnorosgai2/blob/master/resultOnV102.png?raw=true) and 
+![resultOnV103.png](https://github.com/ZuoJiaxing/LearnVIORBnorosgai2/blob/master/resultOnV103.png?raw=true), which is carried out on the V102 medium and v103 difficult dataset. I only adjust some functions to make the code suitable for no-ros application, add the initilization of stereo with IMU, and some edges of G2O related to stereo-inertial. Not bug-free. Not real-time.
 
-###################################################################################3
+###################################################################################
 An implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
 
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
