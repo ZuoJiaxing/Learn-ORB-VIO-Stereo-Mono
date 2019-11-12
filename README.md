@@ -1,5 +1,7 @@
 This is the no-ros version of jingpang's LearnVIORB (https://github.com/jingpang/LearnVIORB). Both the **monocular and stereo visual inertial odometry** are avaliable, please see Examples/ROS/ORB_VIO/srcnoros_vio.cc(Mono), Examples/ROS/ORB_VIO/stereo_noros_vio.cc(Stereo) for detail.
 
+## NOTE: Since I have moved forward to other projects, this repository will not be maintained anymore. Thanks for your interest!
+
 
 ## Execute the following  command to get it start on the Euroc Dataset.
 ### For Mono：
